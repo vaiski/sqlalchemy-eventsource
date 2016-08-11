@@ -5,7 +5,7 @@ import sqlalchemy as sa
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-from sqlalchemy_eventsource.domain.support.types import GUID
+from sqlalchemy_eventsource.types import GUID
 
 
 @pytest.fixture

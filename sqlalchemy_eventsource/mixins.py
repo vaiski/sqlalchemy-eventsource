@@ -15,13 +15,13 @@ class PublicIdMixin(object):
 
 
 class CreatedAtMixin(object):
-    created_at = sa.Column(sa.DateTime, default=datetime.utcnow,
+    created_at = sa.Column(sa.DateTime, default=datetime.datetime.utcnow,
                            nullable=False, index=True)
 
 
 class UpdatedAtMixin(object):
-    created_at = sa.Column(sa.DateTime, default=datetime.utcnow,
-                           onupdate=datetime.utcnow, nullable=False,
+    updated_at = sa.Column(sa.DateTime, default=datetime.datetime.utcnow,
+                           onupdate=datetime.datetime.utcnow, nullable=False,
                            index=True)
 
 

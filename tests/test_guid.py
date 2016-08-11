@@ -4,7 +4,7 @@ import uuid
 import pytest
 import sqlalchemy as sa
 
-from sqlalchemy_eventsource.domain.support.types import GUID
+from sqlalchemy_eventsource.types import GUID
 
 
 @pytest.fixture
